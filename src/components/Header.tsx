@@ -1,5 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HeaderLink } from "./HeaderLink";
+
+const headerLinks = [
+    { label: "NOVIDADES", href: "/novidades" },
+    { label: "SAPATOS", href: "/sapatos/sandalias" },
+    { label: "BOTAS", href: "/botas" },
+    { label: "BOLSAS", href: "/bolsas" },
+    { label: "ACESSÓRIOS", href: "/acessorios" },
+    { label: "PROMOÇÕES", href: "/promocoes" },
+    { label: "|", href: "" },
+    { label: "BRIZZA", href: "/brizza" }
+];
 
 export function Header() {
     return (
@@ -15,17 +27,11 @@ export function Header() {
                     priority
                     />
                     <div className="ml-4 flex space-x-6">
-                        <h3 className="text-[12px] font-normal leading-[16px] uppercase">NOVIDADES</h3>
-                        <Link href="/sapatos/sandalias">
-                         <h3 className="text-[12px] font-normal leading-[16px] uppercase cursor-pointer">SAPATOS</h3>
-                        </Link>
-                        
-                        <h3 className="text-[12px] font-normal leading-[16px] uppercase">BOTAS</h3>
-                        <h3 className="text-[12px] font-normal leading-[16px] uppercase">BOLSAS</h3>
-                        <h3 className="text-[12px] font-normal leading-[16px] uppercase">ACESSÓRIOS</h3>
-                        <h3 className="text-[12px] font-normal leading-[16px] uppercase">PROMOÇÕES</h3>
-                        <h3 className="text-[12px] font-normal leading-[16px] uppercase">|</h3>
-                        <h3 className="text-[12px] font-normal leading-[16px] uppercase">BRIZZA</h3>
+                        {headerLinks.map((link, index) => (
+                            <HeaderLink key={index} href={link.href}>
+                                {link.label}
+                            </HeaderLink>
+                        ))}
                     </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -33,7 +39,7 @@ export function Header() {
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                     </svg>
-                    <h3 className="text-[12px] font-normal leading-[16px] uppercase cursor-pointer">ATIVE SUA LOCALIZAÇÃO</h3>
+                    <HeaderLink>ATIVE SUA LOCALIZAÇÃO</HeaderLink>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                     </svg>
