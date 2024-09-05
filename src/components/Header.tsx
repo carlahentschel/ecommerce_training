@@ -20,7 +20,7 @@ const headerLinks = [
 
 export function Header() {
     return (
-        <header className="bg-slate-200 p-4 md:p-10">
+        <header className="w-full h-[96px] bg-slate-200 p-4 md:p-10">
             <div className="flex flex-wrap items-center justify-between">
                 <div className="flex items-center mb-4 md:mb-0"> 
                     <Image
