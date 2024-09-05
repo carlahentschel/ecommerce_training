@@ -8,11 +8,14 @@ interface IHeaderLinkProps {
 export function HeaderLink({href, children}: IHeaderLinkProps) {
     const content = <h3 className="text-[12px] font-normal leading-[16px] uppercase cursor-pointer">{children}</h3>
 
-    return href ? (
-        <Link href={href}>
-            {content}
-        </Link>
-    ) : (
-        content
-    )
+    if (!href) {  
+        return <>{content}</>;  
+    } 
+
+    return (  
+        <Link href={href}>  
+            {content}  
+        </Link>  
+    );  
+   
 }
