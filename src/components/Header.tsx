@@ -5,6 +5,7 @@ import { LocationIcon } from "./icons/LocationIcon";
 import { FavoriteIcon } from "./icons/FavoriteIcon";
 import { UserIcon } from "./icons/UserIcon";
 import { BagIcon } from "./icons/BagIcon";
+import { NavigationMenuIcon } from "./icons/NavigationMenuIcon";
 
 const headerLinks = [
     { label: "NOVIDADES", href: "/novidades" },
@@ -19,9 +20,9 @@ const headerLinks = [
 
 export function Header() {
     return (
-        
-            <div className="flex items-center justify-between p-10 bg-slate-200">
-                <div className="flex justify-items-center"> 
+        <header className="bg-slate-200 p-4 md:p-10">
+            <div className="flex flex-wrap items-center justify-between">
+                <div className="flex items-center mb-4 md:mb-0"> 
                     <Image
                     src="/assets/ZZLOGO.png"
                     alt="ZZLogo Logo"
@@ -30,13 +31,13 @@ export function Header() {
                     height={24}
                     priority
                     />
-                    <div className="ml-4 flex space-x-6">
+                    <nav className="hidden md:flex ml-4 space-x-6">
                         {headerLinks.map((link, index) => (
                             <HeaderLink key={index} href={link.href}>
                                 {link.label}
                             </HeaderLink>
                         ))}
-                    </div>
+                    </nav>
                 </div>
                 <div className="flex items-center space-x-4">
                     <LocationIcon />
@@ -45,6 +46,12 @@ export function Header() {
                     <UserIcon/>
                     <BagIcon />
                 </div>
+                <div className="md:hidden flex items-center">
+                    <NavigationMenuIcon/>
+                </div>
             </div>
+        </header>
+        
+            
     )
 }
