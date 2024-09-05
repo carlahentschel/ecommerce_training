@@ -8,7 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        commissioner: ['Commissioner', 'sans-serif'],
+        unitext: ['Unitext', 'sans-serif'],
+      },
     },
   },
   plugins: [],

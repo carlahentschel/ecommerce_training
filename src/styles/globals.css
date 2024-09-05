@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Unitext';
+    src: url('/fonts/Unitext-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Unitext';
+    src: url('/fonts/Unitext-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Unitext';
+    src: url('/fonts/Unitext-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
