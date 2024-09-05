@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function MainBanner() {
     return (
-        <div className="relative w-full flex items-center justify-center">
+        <section className="relative w-full flex items-center justify-center">
             <Image 
                 src="/assets/SnapInsta_277051709_862524961814466_3973340754104546427_n_AdobeCreativeCloudExpress 1.png" 
                 alt="Banner"
@@ -20,6 +20,6 @@ export function MainBanner() {
                     CONFIRA
                 </button>
             </div>
-        </div>
+        </section>
     )
 }
