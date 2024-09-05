@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        commissioner: ['Commissioner', 'sans-serif'],
+      },
     },
   },
   plugins: [],
