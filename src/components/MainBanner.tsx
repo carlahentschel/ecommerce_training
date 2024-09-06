@@ -13,11 +13,11 @@ export function MainBanner() {
                 className="object-cover"
             />
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-            <button 
-                className="bg-transparent hover:bg-opacity-20 text-white py-3 px-5 rounded-[32px]  border border-white"
-                style={{ width: '106px', height: '56px' }}
-            >
-                    CONFIRA
+                <button 
+                    className="bg-transparent hover:bg-opacity-20 text-white py-3 px-5 rounded-[32px] border border-white"
+                    style={{ width: '106px', height: '56px' }}
+                >
+                        CONFIRA
                 </button>
             </div>
         </section>
