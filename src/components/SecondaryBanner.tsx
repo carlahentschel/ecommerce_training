@@ -37,8 +37,7 @@ export function SecondaryBanner() {
                     <p className="font-commissioner text-[16px] font-normal leading-[16px]">Conheça o novo coturno</p>
                     <p className="font-commissioner text-[16px] font-normal leading-[16px]">Livia Arezzo</p>
                     <button 
-                        className="font-commissioner text-[12px] bg-black hover:bg-opacity-20 text-white py-3 px-5 rounded-[32px] mt-2"
-                        style={{ width: '95px', height: '48px' }}
+                        className="font-commissioner text-[12px] w-[105px] h-[48px] bg-black hover:bg-opacity-20 text-white py-3 px-5 rounded-[32px] mt-2"
                     >
                         Ver coleção
                     </button>
