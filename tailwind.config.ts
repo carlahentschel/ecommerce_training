@@ -10,7 +10,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         commissioner: ['Commissioner', 'sans-serif'],
-        unitext: ['Unitext', 'sans-serif'],
       },
     },
   },
