@@ -3,6 +3,7 @@ import { Header } from "../components/Header";
 import { PromotionalBanner } from "@/components/PromotionalBanner";
 import { SecondaryBanner } from "@/components/SecondaryBanner";
 import { Carousel } from "@/components/Carousel";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
        <MainBanner />
        <PromotionalBanner/>
        <SecondaryBanner/>
-       <Carousel/>
+       {/* <Carousel/> */}
+       <Footer/>
     </main>
   );
 }
